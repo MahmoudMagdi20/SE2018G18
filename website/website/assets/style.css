@@ -7,7 +7,29 @@
 	 			background-size: 1300px 400px;
 			}
 
+#login
+{
+	text-align: center;
+	background-image: url("/static/login_background.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
 
+
+}
+#loginCard
+{
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	border-radius: 20px;
+
+}
+#loginText
+{
+	color: white;
+	opacity: 1;
+}
 		#x1
 		{
 			color: white;
