@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Make&Trade</title>
+  </head>
+
+  <body>
+    <div  class="container" style="text-align:center;">
+      <br></br>
+      <br></br>
+      <div style="
+          background-color:
+            linear-gradient(to bottom right,rgba(35, 107, 74, 0.8),rgba(6, 38, 35, 0.8)),;          marginTop: 40px;
+          padding: 20px;
+          height: 100%;
+          width: 100%;
+          border-radius: 20px;
+          background-color: rgba(35, 107, 74, 0.8);
+        " >
+    <h1>Log in</h1>
+      <form class="site-form" action="{% url 'accounts:login' %}" method="post">
+          {% csrf_token %}
+          {{ form }}
+          {%if request.GET.next%}
+            <input type="hidden"name="next"value={{request.GET.next}}>
+           {%endif%}
+           <br></br>
+          <input type="submit" value="Login" />
+      </form>
+      <p>Not got an account? <a href="{% url 'accounts:signup' %}">Sign Up</a></p>
+    </div>
+    </div>
+  </body>
+</html>
