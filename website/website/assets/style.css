@@ -1,0 +1,49 @@
+.jumbotron
+			{
+				background-image: url("/static/w.jpg");
+				margin: 0;
+
+			}
+
+
+		#x1
+		{
+			color: white;
+			font-family: sans-serif;
+			font-style: italic;
+		}
+		.lead
+		  {
+			  color:whitesmoke;
+
+		}
+		#about
+		{
+			background-color: aqua;
+
+
+		}
+		#why{
+			text-align: center;
+
+			margin-bottom: 50px;
+		}
+		 .card-img-top
+             {
+
+
+				 height: 350px;
+
+
+            }
+		#abc
+		{
+			padding-bottom: 100px;
+		}
+    .join
+
+		{
+			font-size: 200%;
+			text-align: center;
+			margin-top: 50px;
+		}

@@ -1,0 +1,112 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/style.css">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>make and trade</title>
+        <body>
+
+	  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+		  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Products</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="#">Materials</a>
+      </li>
+		<li class="nav-item">
+        <a class="nav-link " href="#">Tutorials</a>
+      </li>
+    </ul>
+   <form class="form-inline my-2 my-lg-0">
+
+
+
+              <a class="btn btn-primary my-2 my-sm-0" href="{% url 'accounts:login' %}" type="submit" role="button" >Login</a>
+
+
+            </form>
+
+  </div>
+</nav>
+
+   <div class="jumbotron">
+	   <h1 class="display-4" id="x1"><strong>Welcome to make and trade!</strong></h1>
+	   <p class="lead" id="x2" style="font-size:180%"><strong>Learn about  crafts, Make them, sell them ,all in one place here in our website.</strong></p>
+
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+
+
+	   <div id="about" >
+
+                <div class="cards">
+
+                    <h1 class="display-4" style="font-weight:350" style="text-align: center" id="why">Why use our website</h1>
+
+
+
+                </div>
+                <div class="container" id="abc">
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 23rem ">
+                        <img class="card-img-top" src= "{%static '1.jpg'%}" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Tutorials</h5>
+                        <p class="card-text">You will learn from people experinced with making handcrafts how to start making your own and what will you need</p>
+
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 23rem ">
+                        <img class="card-img-top" src="{%static '2.jpg'%}" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Selling products</h5>
+                        <p class="card-text">Through us you will  easily market your products and contact those who are interested   </p>
+
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 23rem" >
+                        <img class="card-img-top" src="{%static '3.jpg'%}" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Providing materials </h5>
+                        <p class="card-text">You will be able to find any material you need for your hadncraft in our webiste and it will reach you in no time </p>
+                    </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+					<p class="join">Want to Join our family?what are waiting for sign up here </p>
+
+
+
+                            <form class="form-inline justify-content-center" >
+
+                        <a   class="btn btn-primary btn-lg" href="{% url 'accounts:signup' %}" type="submit" role="button" >Signup</a>
+
+					</form>
+                </div>
+
+            </div>
+
+
+   </body>
+</html>

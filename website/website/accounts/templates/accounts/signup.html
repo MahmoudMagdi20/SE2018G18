@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Make&Trade</title>
+  </head>
+  <body>
+    <h1>Signup</h1>
+      <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
+          {% csrf_token %}
+          {{ form }}
+          <input type="submit" value="Signup">
+      </form
+  </body>
+</html>
