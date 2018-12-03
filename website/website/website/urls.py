@@ -9,7 +9,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('accounts.urls')),
 
-    url(r'^$', views.homepage,name="home"),
+    url(r'^home/', views.homepage_view,name="home"),
+    url(r'^products/', views.products_view,name="products"),
+    url(r'^materials/', views.materials_view,name="materials"),
+    url(r'^tutorials/', views.tutorials_view,name="tutorials"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
