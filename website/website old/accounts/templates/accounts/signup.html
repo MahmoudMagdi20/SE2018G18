@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Make&Trade</title>
+  </head>
+  <body>
+    <div class="container" id="about">
+      <br></br>
+
+<!--  ########################################navbar####################################################-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Make and trade</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'products' %}">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'materials' %}">Matrils</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="{% url 'tutorials' %}">Tutorials</a>
+            </li>
+          </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="btn btn-info my-2 my-sm-0" href="{% url 'accounts:login' %}" type="submit" role="button" >Login</a>
+        </form>
+      </nav>
+
+<!--#######################################login card##################################### -->
+      <div id="login" >
+
+        <br></br>
+
+
+        <div id="loginCard">
+          <div id="loginText">
+    <h1>Signup</h1>
+      <form  action="{% url 'accounts:signup' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+
+           <br></br>
+          <input type="submit" value="Signup">
+      </form>
+
+      </div>
+    </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+    </div>
+
+    </div>
+  </body>
+</html>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$ -->

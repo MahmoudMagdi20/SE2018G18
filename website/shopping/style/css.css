@@ -1,0 +1,22 @@
+.mainCard
+{
+	background-image: linear-gradient(to right, #636970 , #7a838e);
+	text-align: center;
+	width: 70%;
+	margin: auto;
+  padding: 40px;
+	border-radius: 20px;
+	color: white;
+
+}
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+.dim{
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  text-align: center;
+}
