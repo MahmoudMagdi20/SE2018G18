@@ -8,8 +8,11 @@ SRS : https://github.com/MahmoudMagdi20/SE2018G18/blob/master/SRS.pdf
 
 ZenHub : https://app.zenhub.com/workspaces/se2018g18-5c0970cf4b5806bc2bfb3cfc/boards?repos=151755435
 
+The Website's code : https://github.com/MahmoudMagdi20/SE2018G18/tree/master/website/shopping
+
+
+Team Members:
 Mahmoud Magdy - Amr Essam - Moatasem Adel - Mostafa Mohamed AbdelMogeid - Hesham Samir - Haithem Mostafa - 
 Youssef Mohamed - Youssef Mahmoud Zaki
-
 
 Sections 2 & 3
