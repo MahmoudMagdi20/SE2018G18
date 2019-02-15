@@ -10,6 +10,7 @@ ZenHub : https://app.zenhub.com/workspaces/se2018g18-5c0970cf4b5806bc2bfb3cfc/bo
 
 The Website's code : https://github.com/MahmoudMagdi20/SE2018G18/tree/master/website/shopping
 
+The deployed website : http://makeandtrade.epizy.com/home.php
 
 Team Members:
 Mahmoud Magdy - Amr Essam - Moatasem Adel - Mostafa Mohamed AbdelMogeid - Hesham Samir - Haithem Mostafa - 
